@@ -5,7 +5,7 @@ import TopicCard from '../../Components/TopicCard/TopicCard';
 const NewsDetailsPage = (info) => {
     let data = info.location.state.info
 
-    let urlImage = data.urlToImage == null ? process.env.PUBLIC_URL + "assets/images/default.jpg" : data.urlToImage;
+    let urlImage = data.urlToImage == null ? process.env.PUBLIC_URL + "/assets/images/default.jpg" : data.urlToImage;
     console.log(info) 
     return (
         <React.Fragment>
@@ -50,7 +50,7 @@ const NewsDetailsPage = (info) => {
                                 <div className="card-content">
                                     <div className="card-actions">
                                     <button type="button"><i className="far fa-heart"></i></button>
-                                    <button type="button"><img src={process.env.PUBLIC_URL + "assets/images/share.png"}
+                                    <button type="button"><img src={process.env.PUBLIC_URL + "/assets/images/share.png"}
                                         alt="share" /></button>
                                 </div>
                                 <div className="card-category">

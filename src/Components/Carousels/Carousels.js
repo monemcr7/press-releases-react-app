@@ -9,7 +9,7 @@ const Carousels = () => {
                 <div className="img-content">
                      <img
                 className="d-block w-100"
-                src={process.env.PUBLIC_URL + "assets/images/slide1.png"}
+                src={process.env.PUBLIC_URL + "/assets/images/slide1.png"}
                 alt="First slide"
                 />
                 </div>
@@ -24,7 +24,7 @@ const Carousels = () => {
                 <div className="img-content">
                      <img
                 className="d-block w-100"
-                src={process.env.PUBLIC_URL + "assets/images/Rectangle.png"}
+                src={process.env.PUBLIC_URL + "/assets/images/Rectangle.png"}
                 alt="First slide"
                 />
                 </div>

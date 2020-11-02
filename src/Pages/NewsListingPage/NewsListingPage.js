@@ -16,35 +16,39 @@ const NewsListingPage = () => {
 
     const nameForm = useRef(null);
 
+    const getData=()=>{
+        setLoading(true);
+        fetch('/data.json'
+        ,{
+            headers : { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Authorization',
+                'Access-Control-Request-Method': 'GET, POST, DELETE, PUT, OPTIONS',
+                'Accept': 'application/json'
+            }
+        }
+            )
+            .then(function(response){
+                // console.log(response)
+                return response.json();
+            })
+            .then(function(myJson) {
+                const updatedCard = myJson.articles.map(cards => {
+                    return {
+                        ...cards
+                    }
+                });
+
+                setCards(updatedCard);
+                setCategory(myJson.sourceCategory);
+                // console.log(myJson.sourceCategory)  
+                setLoading(false);
+            });
+        }
     
     useEffect(()=>{
-        const getData=()=>{
-            setLoading(true);
-            fetch('/data.json'
-            ,{
-                headers : { 
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                }
-                }
-                )
-                .then(function(response){
-                    // console.log(response)
-                    return response.json();
-                })
-                .then(function(myJson) {
-                    const updatedCard = myJson.articles.map(cards => {
-                        return {
-                            ...cards
-                        }
-                    });
-
-                    setCards(updatedCard);
-                    setCategory(myJson.sourceCategory);
-                    // console.log(myJson.sourceCategory)  
-                    setLoading(false);
-                });
-            }
         getData();
     },[]);
 

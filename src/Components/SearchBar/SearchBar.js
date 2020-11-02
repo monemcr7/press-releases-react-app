@@ -80,7 +80,7 @@ const SearchBar = ({category, onChange, categoryValue, keyPress,handleClickEvent
                                    />
                                 <button type="button" onClick={handleClickEvent} className="btn btn-light"><i className="fas fa-search"></i></button>
                             </div>
-                            <span>Sort by <img src={process.env.PUBLIC_URL + "assets/images/sort.png"} alt="sort" /></span>
+                            <span>Sort by <img src={process.env.PUBLIC_URL + "/assets/images/sort.png"} alt="sort" /></span>
                         </form>
                     </div>
                 </div>

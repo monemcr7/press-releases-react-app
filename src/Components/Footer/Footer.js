@@ -38,11 +38,11 @@ const Footer = () => {
                                Follow us on
                            </h3>
                           <ul className="list-unstyled soical">
-                              <li><a href="#"><img src={process.env.PUBLIC_URL + "assets/images/surface1.png"} alt="instagram" /></a></li>
-                              <li><a href="#"><img src={process.env.PUBLIC_URL + "assets/images/Component 39 – 1.png"} alt="youtube" /></a></li>
-                              <li><a href="#"><img src={process.env.PUBLIC_URL + "assets/images/Component 40 – 1.png"} alt="linkedin" /></a></li>
-                              <li><a href="#"><img src={process.env.PUBLIC_URL + "assets/images/Component 41 – 1.png"} alt="facebook" /></a></li>
-                              <li><a href="#"><img src={process.env.PUBLIC_URL + "assets/images/Component 42 – 1.png"} alt="tiwwter" /></a></li>
+                              <li><a href="#"><img src={process.env.PUBLIC_URL + "/assets/images/surface1.png"} alt="instagram" /></a></li>
+                              <li><a href="#"><img src={process.env.PUBLIC_URL + "/assets/images/Component 39 – 1.png"} alt="youtube" /></a></li>
+                              <li><a href="#"><img src={process.env.PUBLIC_URL + "/assets/images/Component 40 – 1.png"} alt="linkedin" /></a></li>
+                              <li><a href="#"><img src={process.env.PUBLIC_URL + "/assets/images/Component 41 – 1.png"} alt="facebook" /></a></li>
+                              <li><a href="#"><img src={process.env.PUBLIC_URL + "/assets/images/Component 42 – 1.png"} alt="tiwwter" /></a></li>
                           </ul>
                       </div>
                   </div>

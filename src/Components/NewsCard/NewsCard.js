@@ -6,7 +6,7 @@ const NewsCard = ({title, description,urlToImage,publishedAt, loading, moreInfo,
     if(loading) {
         return <h2>Loading......</h2>
     }
-    let urlImage = urlToImage == null ? process.env.PUBLIC_URL + "assets/images/default.jpg" : urlToImage;
+    let urlImage = urlToImage == null ? process.env.PUBLIC_URL + "/assets/images/default.jpg" : urlToImage;
 
     let descriptionDefault = description == '' ? content : description;
     return (
@@ -22,7 +22,7 @@ const NewsCard = ({title, description,urlToImage,publishedAt, loading, moreInfo,
                         <div className="card-content">
                             <div className="card-actions">
                             <button type="button"><i className="far fa-heart"></i></button>
-                            <button type="button"><img src={process.env.PUBLIC_URL + "assets/images/share.png"}
+                            <button type="button"><img src={process.env.PUBLIC_URL + "/assets/images/share.png"}
                             alt="share" /></button>
                         </div>
                         <div className="card_title">
